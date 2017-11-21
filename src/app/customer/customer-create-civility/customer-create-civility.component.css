@@ -1,0 +1,17 @@
+.customer-create-civility {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+.customer-create-civility input {
+    width: 100%;
+    border: 1px solid #114b5f;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    outline: 0;
+    flex-direction: column;
+    margin-top: 10px;
+}

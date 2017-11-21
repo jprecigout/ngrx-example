@@ -1,0 +1,30 @@
+.customer-container-search {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 3px 4px rgba(0,0,0,.1);
+    border: 1px solid #c1cedb;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+.customer-container-search .title {
+    background: #114b5f;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.customer-container-search .title h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.customer-container-search .pane {
+    display: flex;
+    flex-direction: column
+}

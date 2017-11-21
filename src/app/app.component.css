@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  margin: 25px 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.app{
+  max-width: 96%;
+  width: 100%
+}

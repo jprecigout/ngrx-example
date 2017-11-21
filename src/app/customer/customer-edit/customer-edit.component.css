@@ -1,0 +1,15 @@
+.customer-edit{
+    background: #9cb1bf;
+    border-radius: 3px;
+    margin: 5px 0;
+    padding: 10px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 3px 3px 4px rgba(0,0,0,.1);
+}
+
+.customer-edit .item{
+    display: flex;
+    padding: 10px;
+}

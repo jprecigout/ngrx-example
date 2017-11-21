@@ -1,0 +1,14 @@
+<div class="customer-container-create">
+
+      <div class="title">
+        <h1>
+            Page de création customer
+        </h1>
+      </div>
+      <div class="pane">
+        <app-customer-create-form
+        [customer]="customer$ | async"
+        (customerCreate)="customerCreate($event)">
+        </app-customer-create-form>
+      </div>
+</div>

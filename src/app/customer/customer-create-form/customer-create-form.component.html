@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="customer-create-form">
+    <app-customer-create-civility
+      [parent]="form">
+    </app-customer-create-civility>
+    <hr/>
+    <app-customer-create-address
+      [parent]="form">
+    </app-customer-create-address>
+    <div class="buttonBar">
+      <button 
+        type="button" 
+        (click)="onSubmit()"
+        [disabled]= "!form.valid"
+        class="btn btn-success">
+          Créer
+      </button>
+  </div>
+</form>
+  

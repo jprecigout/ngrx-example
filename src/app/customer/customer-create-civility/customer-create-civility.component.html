@@ -1,0 +1,30 @@
+<div class="customer-create-civility" [formGroup]="parent">  
+
+    <input 
+        type="text" 
+        formControlName="firstname"
+        maxlength="50"
+        placeholder="Prénom" >
+    <div [hidden]="!(parent.controls.firstname?.dirty && parent.controls.firstname?.invalid)">
+      <small style="color:red" [hidden]="!parent.controls.firstname?.errors?.required">Le champ est obligatoire</small>
+    </div>
+
+  <input 
+    type="text" 
+    formControlName="lastname" 
+    maxlength="50"
+    placeholder="Nom" >
+  <div [hidden]="!(parent.controls.lastname?.dirty && parent.controls.lastname?.invalid)">
+      <small style="color:red" [hidden]="!parent.controls.lastname?.errors?.required">Le champ est obligatoire</small>
+  </div>
+
+  <input 
+    type="text" 
+    formControlName="email" 
+    placeholder="Email" >
+
+  <input 
+    type="text" 
+    formControlName="phone" 
+    placeholder="Téléphone" >
+</div>

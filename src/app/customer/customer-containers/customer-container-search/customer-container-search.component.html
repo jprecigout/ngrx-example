@@ -1,0 +1,19 @@
+<div class="customer-container-search">
+    <div class="title">
+      <h1>
+          Recherche de customer
+      </h1>
+    </div>
+    <div class="pane">
+      <app-customer-search-form
+        [firstname]="firstname$ | async"
+        [lastname]="lastname$ | async"
+        [numcustomer]="numcustomer$ | async"
+        (customerSearch)="search($event)">
+      </app-customer-search-form>
+
+      <app-customer-search-result
+        [customers]="customers$ | async">
+      </app-customer-search-result>
+    </div>
+</div>

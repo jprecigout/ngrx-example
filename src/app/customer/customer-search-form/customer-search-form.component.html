@@ -1,0 +1,16 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="customer-search-form">
+  
+  <app-customer-search 
+    [parent]="form">
+  </app-customer-search>
+  
+  <div class="buttonBar">
+    <button 
+      type="button" 
+      (click)="onSubmit()"
+      [disabled]= "!form.valid"
+      class="btn btn-success">
+        Chercher
+    </button>
+  </div>
+</form>

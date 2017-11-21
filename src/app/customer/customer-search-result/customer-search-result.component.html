@@ -1,0 +1,19 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Numéro client</th>
+      <th>Prénom</th>
+      <th>Nom</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customers">
+        
+          <th scope="row"> {{ customer.numcustomer }} </th>
+          <td> {{ customer.firstname }} </td>
+          <td> {{ customer.lastname }} </td>
+          <td><a [routerLink]="['/customer/edit', customer.numcustomer]"><i class="material-icons">face</i> </a></td>
+    </tr>
+  </tbody>
+</table>

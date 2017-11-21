@@ -1,0 +1,36 @@
+<div class="customer-create-address" [formGroup]="parent">
+    <input
+        type="text"
+        formControlName="numberstreet"
+        placeholder="Numéro" >
+    <input
+      type="text"
+      formControlName="street"
+      placeholder="Rue" >
+    <!--<input
+      type="text"
+      formControlName="zipcode"
+      placeholder="Code postal" > -->
+    <p-autoComplete
+      class="autocomplete"
+      formControlName="zipcode"
+      minLength="3"
+      maxlength="5"
+      inputStyleClass="input-autocomplete"
+      [suggestions]="filteredCity$|async"
+      (completeMethod)= "filterCity($event)"
+      (onSelect)="selectCity($event)"
+      (onClear)="unselectCity($event)"
+      field="zip" placeholder="Code postal" >
+      <ng-template let-objCity pTemplate="item">
+          <div class="ui-helper-clearfix" style="cursor:default">
+              <div style="font-size:14px"> {{objCity.zip}} - {{objCity.city}}</div>
+          </div>
+      </ng-template>
+    </p-autoComplete>
+    <input
+      type="text"
+      disabled= "true"
+      formControlName="city"
+      placeholder="Ville" >
+</div>
